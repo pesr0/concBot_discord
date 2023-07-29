@@ -4,7 +4,6 @@ from discord.ext import commands
 import asyncio
 import nacl
 
-
 prefix = "."
 
 intents = discord.Intents.default()
@@ -27,6 +26,6 @@ async def load_extensions():
 async def main():
     async with bot:
         await load_extensions()
-        await bot.start('MTEzMDI2ODE3NjQwODY0OTg2OA.G1-Cva.rvLy9Jzh22BLQgn4N88m287xEije0rOjh64lBA')
+        await bot.start("APITOKEN")
 
 asyncio.run(main())
